@@ -24,7 +24,9 @@ body{
 }
 
 #meny{
-	list-style: none;
+	list-style-type: none;
 	display: inline;
+    margin: 0;
+    padding: 0;
 }
 

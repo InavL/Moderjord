@@ -1,0 +1,30 @@
+	*{
+		font-family: Courier;
+		text-align: center;
+	}
+	
+body{
+	background-color: #CCEEFF;
+}
+
+#skugga{
+	color: black;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#bildFärg{
+	background-color: #fefbd8;
+}
+
+#centreraBild{
+    display: flex;
+    align-items: center;
+    height: 50%;
+	justify-content: space-around;
+}
+
+#meny{
+	list-style: none;
+	display: inline;
+}
+

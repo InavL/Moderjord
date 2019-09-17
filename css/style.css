@@ -7,7 +7,7 @@ body {
 
 header {
   width: 100%;
-  height: 65%;
+  height: 100%;
   background-color: rgba(13, 105, 145, 0.1);
   /* rgba(13, 105, 145, 1); */
   text-align: center;
@@ -107,4 +107,13 @@ body.sticky-header header h1 {
   -ms-transform: scale(0, 0);
   -webkit-transform: scale(0, 0);
   transform: scale(0, 0);
+}
+
+#wSpace {
+  padding-top: 5%;
+}
+
+#profilImg{
+    width: 50%;
+    height: 100%;
 }

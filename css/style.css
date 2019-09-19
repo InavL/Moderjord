@@ -10,7 +10,7 @@ body {
   height: 100%;
   /* background-color: rgba(13, 105, 145, 1);
    rgba(13, 105, 145, 1); */
-  background: url(images/topback.jpg);
+  background: url(../images/topback.jpg);
   text-align: center;
   position: relative;
   position: fixed;

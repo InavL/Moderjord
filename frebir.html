@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/profilsida.js"></script>
+    
+    
+</head>
+<body onload=" progressBar()">
+    
+    
+    <div class="divPage">
+        <button  type="button" id="stop">Stoppa bildspel</button>
+        <button  type="button" id="start">Fortsätt bildspel</button>
+
+       <div >
+            <img class="bildspel"src="images/abisko.jpg"></img>
+            <img class="bildspel"src="images/abisko2.jpg"></img>
+        </div>
+        
+        <div class="divPersonInfo">
+            
+        <div class="bars"> 
+                <div class="bars1">   
+        <h3 id="barTxt">Programmerings kunskaper</h3>
+        <div class="java-info">
+                <p>Fredrik har läst en kurs på 7.5 hp i java och är väl erfaren inom språket.</p>
+            </div>
+        
+            <h3 id="barTxt">Java</h3>
+            <div id="barProgress"> 
+            <div id="javaBar">
+                </div>
+            </div>
+        
+        <div class="sql-info">
+            <p>Fredrik har läst en kurs på 7.5 hp inom databaser & sql och är väl erfaren inom språket.</p>
+        </div>
+        
+            <h3 id="barTxt">Databaser & sql</h3>
+        <div id="barProgress"> 
+            <div id="sqlBar">
+            </div>
+            </div>
+            </div>
+            <div class="bars2"> 
+            <h3 id="barTxt">Övriga kvalifikationer</h3>
+        
+            <h3 id="barTxt">UML</h3>
+         <div id="barProgress"> 
+            <div id="umlBar">
+            </div>
+        </div>
+        
+            <h3 id="barTxt">Spanska</h3>
+        <div id="barProgress"> 
+            <div id="spBar">
+            </div>
+        </div>
+    </div>
+    </div>
+</div> 
+    <h2 id="pTxt">Fredrik</h2>
+    <img class="pImg2" src="images/frebir.jpg"></img>
+    </div>
+   
+
+
+</body>
+
+<script src="js/profilsida.js"></script>
+    <script src="js/bildspel.js"></script>
+    <script src="js/progressBar.js"></script>
+</html>

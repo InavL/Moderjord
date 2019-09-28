@@ -5,6 +5,9 @@ body {
   margin: 0;
 }
 
+/* Navbar */
+/* ---------------------------------------- */
+
 .header {
   width: 100%;
   height: 100%;
@@ -21,6 +24,7 @@ body {
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  z-index: 1;
 }
 
 .header h1 {
@@ -77,19 +81,8 @@ body {
   box-shadow: 0 0 0 1px #fff;
 }
 
-.navProfil {
-  position: absolute;
-  height: 60px;
-  line-height: 60px;
-  width: 100%;
-  background-color: #0b4f6c;
-}
-
-.navProfil a:hover {
-  -moz-box-shadow: 0 0 0 1px #fff;
-  -webkit-box-shadow: 0 0 0 1px #fff;
-  box-shadow: 0 0 0 1px #fff;
-}
+/* Text */
+/* ---------------------------------------- */
 
 h1 {
   font-family: 'Open Sans', sans-serif;
@@ -147,6 +140,13 @@ pre {
   line-height: 15.7167px;
 }
 
+/* Misc */
+/* ---------------------------------------- */
+
+#wSpace {
+  padding-top: 5%;
+}
+
 .wrapper {
   width: 800px;
   margin: 0 auto;
@@ -163,6 +163,9 @@ section {
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
+
+/* Footer */
+/* ---------------------------------------- */
 
 .footer {
   display: block;
@@ -254,6 +257,7 @@ section {
     height: 32px;
     width: 100px;
   }
+
   .footer-logo-byline {
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
@@ -263,13 +267,16 @@ section {
     color: #979AA4;
     text-align: center;
   }
+
   .ddb-footer-list-item a {
     font-size: 11px;
   }
+
   .ddb-footer-list-label {
     font-size: 12px;
     padding-bottom: 4px;
   }
+
   .footer-logo {
     padding-inline-end: 1%;
     padding-bottom: 0;
@@ -301,9 +308,126 @@ body.sticky-header .header h2 {
   transform: scale(0, 0);
 }
 
-#wSpace {
-  padding-top: 5%;
+/* Profilsida */
+/* ---------------------------------------- */
+
+#pTxt {
+  margin-top: 3%;
+  margin-left: 44%;
+  position: absolute;
 }
+
+.pImg2 {
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 40%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.divPersonInfo {
+  width: 50%;
+  padding-bottom: 20%;
+  margin-top: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
+  position: absolute;
+  border: solid;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.infoRuta {
+  display: flex;
+  flex-direction: row;
+  border: solid;
+}
+
+.java-info {
+  position: absolute;
+  visibility: hidden;
+  border: solid;
+  width: 10%;
+  background-color: white;
+}
+
+.sql-info {
+  position: absolute;
+  visibility: hidden;
+  border: solid;
+  width: 10%;
+  background-color: white;
+}
+
+#javaBar {
+  width: 10%;
+  height: 100%;
+  background-color: rgb(6, 238, 6);
+}
+
+#sqlBar {
+  width: 10%;
+  height: 100%;
+  background-color: rgb(6, 238, 6);
+}
+
+#umlBar {
+  width: 10%;
+  height: 100%;
+  background-color: rgb(6, 238, 6);
+}
+
+#spBar {
+  width: 10%;
+  height: 100%;
+  background-color: rgb(6, 238, 6);
+}
+
+.bars {
+  display: flex;
+  flex-direction: row;
+  border: solid;
+  height: 30%;
+  width: 100%;
+}
+
+#barProgress {
+  margin-top: 10%;
+  width: 100%;
+  height: 7%;
+  border: solid;
+  background-color: white;
+}
+
+#barTxt {
+  font-size: 12;
+  margin-top: 10%;
+}
+
+/* Bildspel */
+/* ---------------------------------------- */
+
+#stop {
+  float: right;
+  margin: 2%;
+  position: absolute;
+}
+
+#start {
+  float: right;
+  margin: 4%;
+  position: absolute;
+}
+
+.bildspel {
+  height: 100%;
+  width: 100%;
+  border: solid;
+  display: none;
+}
+
+/* Om oss */
+/* ---------------------------------------- */
 
 .profilDiv {
   padding: 1%;
@@ -312,140 +436,55 @@ body.sticky-header .header h2 {
   justify-content: center;
 }
 
-#pTxt{
-  margin-top:3%;
-  margin-left:44%;
-  position: absolute;
-}
-.pImg2{
-  align-items: center;
-  margin-top:10%;
-  margin-left:40%;
-  border-radius: 50%;
-  position: absolute;
-}
-.bildspel{
-  height: 100%;
-  width: 100%;
-  border:solid;
-}
-#stop{
-  float: right;
-  margin:2%;
-  position: absolute;
-}
-#start{
-  float: right;
-  margin:4%;
-  position: absolute;
+#omOss {
+  text-align: center;
+  line-height: 0;
+  padding-top: 3%;
 }
 
-.bildspel{
-  display:none;
-}
-.imgDiv{
-  margin:4%;
-}
-.txt1{
-  margin:4%
+.imgDiv {
+  margin: 4%;
 }
 
 .img1 {
   border-radius: 50%;
+  width: 100%;
+  z-index: -2;
 }
 
 .img1:hover {
   opacity: 0.5;
+  z-index: -1;
 }
 
-
-.profilHead {
+.prof-byline {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
-.divPage {
-  height:auto;
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  border: solid;
-  position: absolute;
+.prof-descr {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  color: rgb(0, 0, 0);
+  text-align: justify;
 }
 
-.divPersonInfo{
-  width:50%;
-  padding-bottom:20%;
-  margin-top: 2%;
-  margin-left: 25%;
-  margin-right: 25%;
-  position: absolute;
-  border:solid;
-  background-color: white;
-  opacity:0.7;
-}
-.infoRuta{
- display:flex;
- flex-direction: row;
-  border:solid;
-}
+@media only screen and (max-width: 600px) {
+  .imgDiv {
+    margin: 1%;
+  }
 
-.java-info{
-position: absolute;
-visibility: hidden;
-border:solid;
-width: 10%;
-background-color: white;
-}
-.sql-info{
-  position: absolute;
-  visibility: hidden;
-  border:solid;
-  width: 10%;
-  background-color: white;
-}
+  .prof-byline {
+    font-size: 18px;
+  }
 
-#javaBar{
-  width: 10%;
-  height: 100%;
-  background-color: rgb(6, 238, 6);
-}
-#sqlBar{
-  width: 10%;
-  height: 100%;
-  background-color:rgb(6, 238, 6);
-}
-#umlBar{
-  width: 10%;
-  height:100%;
-  background-color:rgb(6, 238, 6);
-}
-
-#spBar{
-  width: 10%;
-  height:100%;
-  background-color:rgb(6, 238, 6);
-}
-.bars{
-  display: flex;
-  flex-direction: row;
-  border:solid;
-  height:30%;
-  width:100%;
-}
-.bars1{
-
-}
-.bars2{}
-
-#barProgress{
-  margin-top:10%;
-  width: 100%;
-  height:7%;
-  border:solid;
-
-  backgound-color: white;
-}
-#barTxt{
-  font-size: 12;
-  margin-top:10%;
+  .prof-descr {
+    font-size: 12px;
+  }
 }

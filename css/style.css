@@ -62,7 +62,7 @@ body {
 .header .navb a {
   color: #fff;
   display: inline-block;
-  padding: 1% 1%;
+  padding: 0.5% 1%;
   line-height: 1;
   font-size: 24px;
   text-decoration: none;
@@ -209,8 +209,9 @@ section {
 .footer-logo-byline {
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
   color: #979AA4;
   text-align: center;
 }
@@ -233,18 +234,46 @@ section {
 }
 
 .ddb-footer-list-label {
-  font-size: 12px;
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   padding-bottom: 10px;
-  text-transform: uppercase;
 }
 
 .ddb-footer-list-item a {
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
   color: white;
-  font-weight: bold;
   text-decoration: none;
-  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .ddb-footer-logo-image {
+    background-size: 100%;
+    height: 32px;
+    width: 100px;
+  }
+  .footer-logo-byline {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 10px;
+    color: #979AA4;
+    text-align: center;
+  }
+  .ddb-footer-list-item a {
+    font-size: 11px;
+  }
+  .ddb-footer-list-label {
+    font-size: 12px;
+    padding-bottom: 4px;
+  }
+  .footer-logo {
+    padding-inline-end: 1%;
+    padding-bottom: 0;
+  }
 }
 
 /* Sticky Header Style */

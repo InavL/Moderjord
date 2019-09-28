@@ -7,73 +7,84 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript" src="js/profilsida.js"></script>
-    
-    
-</head>
-<body onload=" progressBar()">
-    
-    
-    <div class="divPage">
-        <button  type="button" id="stop">Stoppa bildspel</button>
-        <button  type="button" id="start">Fortsätt bildspel</button>
 
-       <div >
-            <img class="bildspel"src="images/abisko.jpg"></img>
-            <img class="bildspel"src="images/abisko2.jpg"></img>
-        </div>
-        
-        <div class="divPersonInfo">
-            
-        <div class="bars"> 
-                <div class="bars1">   
-        <h3 id="barTxt">Programmerings kunskaper</h3>
-        <div class="java-info">
-                <p>Fredrik har läst en kurs på 7.5 hp i java och är väl erfaren inom språket.</p>
+</head>
+
+<body onload="progressBar()">
+
+    <img class="bildspel fade" src="images/abisko.jpg" alt="">
+    <img class="bildspel fade" src="images/abisko2.jpg" alt="">
+
+    <button type="button" id="stop">Stoppa bildspel</button>
+    <button type="button" id="start">Fortsätt bildspel</button>
+
+    <div class="java-info">
+        <p>Fredrik har läst en kurs på 7.5 hp i java och är väl erfaren inom språket.</p>
+    </div>
+    <div class="sql-info">
+        <p>Fredrik har läst en kurs på 7.5 hp inom databaser & sql och är väl erfaren inom språket.</p>
+    </div>
+    <div class="divPersonInfo">
+        <div class="personTop">
+            <div class="topL">
+                    <h2 class="pTxt">Fredrik</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est
+                    laborum.
+                </p>
             </div>
-        
-            <h3 id="barTxt">Java</h3>
-            <div id="barProgress"> 
-            <div id="javaBar">
+            <div class="topR">
+                <img class="pImg2" src="images/frebir.jpg" alt="">
+            </div>
+        </div>
+        <div class="personBottom">
+            <div class="bars1">
+                <h3 class="barTxt">Programmerings kunskaper</h3>
+
+
+                <h3 class="barTxt">Java</h3>
+                <div class="barProgress">
+                    <div id="javaBar">
+                        <div id="centerTxt"></div>
+                    </div>
+                </div>
+
+                <h3 class="barTxt">Databaser & sql</h3>
+                <div class="barProgress">
+                    <div id="sqlBar">
+                    </div>
                 </div>
             </div>
-        
-        <div class="sql-info">
-            <p>Fredrik har läst en kurs på 7.5 hp inom databaser & sql och är väl erfaren inom språket.</p>
-        </div>
-        
-            <h3 id="barTxt">Databaser & sql</h3>
-        <div id="barProgress"> 
-            <div id="sqlBar">
-            </div>
-            </div>
-            </div>
-            <div class="bars2"> 
-            <h3 id="barTxt">Övriga kvalifikationer</h3>
-        
-            <h3 id="barTxt">UML</h3>
-         <div id="barProgress"> 
-            <div id="umlBar">
-            </div>
-        </div>
-        
-            <h3 id="barTxt">Spanska</h3>
-        <div id="barProgress"> 
-            <div id="spBar">
-            </div>
-        </div>
-    </div>
-    </div>
-</div> 
-    <h2 id="pTxt">Fredrik</h2>
-    <img class="pImg2" src="images/frebir.jpg"></img>
-    </div>
-   
+            <div class="bars2">
+                <h3 class="barTxt">Övriga kvalifikationer</h3>
 
+                <h3 class="barTxt">UML</h3>
+                <div class="barProgress">
+                    <div id="umlBar">
+                    </div>
+                </div>
+
+                <h3 class="barTxt">Spanska</h3>
+                <div class="barProgress">
+                    <div id="spBar">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 
 <script src="js/profilsida.js"></script>
-    <script src="js/bildspel.js"></script>
-    <script src="js/progressBar.js"></script>
+<script src="js/bildspel.js"></script>
+<script src="js/progressBar.js"></script>
+
 </html>

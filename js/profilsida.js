@@ -1,12 +1,12 @@
 $(document).ready(function () {
-    $(".innerJava").mouseover(function () {
+    $("#javaBar").mouseover(function () {
         $(".java-info").css({
             "visibility": "visible"
         }); 
 });
 });
     $(document).ready(function() {
-    $(".innerJava").mouseout(function() {
+    $("#javaBar").mouseout(function() {
         $(".java-info").css({
             "visibility": "hidden"
         }); 

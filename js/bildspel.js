@@ -11,11 +11,11 @@ bildSpel()
     bilder[i].style.display = "none";
   }
   index++;
-  
+
   if (index > bilder.length) {index = 1}
   bilder[index-1].style.display = "block";
   if(hej==true){
-  setTimeout(bildSpel, 1000);
+  setTimeout(bildSpel, 4000);
 }
   else{
     
@@ -26,7 +26,6 @@ $(document).ready(function() {
   $("#stop").click(function(){
     console.log( "ready!" );
     hej= new Boolean(false);
-    console.log( hej );
   });
   });
   $(document).ready(function() {
@@ -34,6 +33,5 @@ $(document).ready(function() {
       console.log( "ready!" );
       hej= new Boolean(true);
       bildSpel();
-      console.log( hej );
     });
     });

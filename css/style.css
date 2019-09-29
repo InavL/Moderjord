@@ -81,6 +81,48 @@ body {
   box-shadow: 0 0 0 1px #fff;
 }
 
+.headerNoPic {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(13, 105, 145, 1);
+  text-align: center;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.headerNoPic .navb {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  background-color: #0b4f6c;
+}
+
+.headerNoPic .navb a {
+  color: #fff;
+  display: inline-block;
+  padding: 0.5% 1%;
+  line-height: 1;
+  font-size: 24px;
+  text-decoration: none;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.headerNoPic .navb a:hover {
+  -moz-box-shadow: 0 0 0 1px #fff;
+  -webkit-box-shadow: 0 0 0 1px #fff;
+  box-shadow: 0 0 0 1px #fff;
+}
+
 /* Text */
 /* ---------------------------------------- */
 
@@ -313,55 +355,72 @@ body.sticky-header .header h2 {
 
 
 
-#pTxt{
-  margin-left:30%;
-  margin-right:30%;
+#pTxt {
+  margin-left: 30%;
+  margin-right: 30%;
 }
-.pImg2{
+
+.pImg2 {
   border-radius: 50%;
   margin-top: 25%;
   margin-right: 10%;
 }
-.bildspel{
-  position:fixed;
-  width: 100%;    
+
+.bildspel {
+  position: fixed;
+  width: 100%;
 }
-#stop{
+
+#stop {
   float: right;
   position: absolute;
   margin-bottom: 2%;
 }
-#start{
-  margin-top:2%;
+
+#start {
+  margin-top: 2%;
   float: right;
   position: absolute;
 }
 
-.bildspel{
-  display:none;
+.bildspel {
+  display: none;
   background-color: black;
 }
 
-.fade{
+.fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 3s;
   animation-name: fade;
   animation-duration: 3s;
 }
-@-webkit-keyframes fade{
-  from{opacity: 0.4}
-  to{opacity:1}
-}
-@keyframes fade{
-  from{opacity: 0.4}
-  to{opacity:1}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
-.imgDiv{
-  margin:4%;
+@keyframes fade {
+  from {
+    opacity: 0.4
+  }
+
+  to {
+    opacity: 1
+  }
 }
-.txt1{
-  margin:4%
+
+.imgDiv {
+  margin: 4%;
+}
+
+.txt1 {
+  margin: 4%
 }
 
 .img1 {
@@ -376,58 +435,65 @@ body.sticky-header .header h2 {
   text-align: center;
 }
 
-.divPersonInfo{
+.divPersonInfo {
   box-sizing: border-box;
   position: relative;
   display: flex;
   flex-direction: column;
-  width:50%;
+  width: 50%;
+  margin-top: 2%;
   margin-left: 25%;
   margin-right: 25%;
+  margin-bottom: 2%;
   background-color: white;
   background-color: rgba(255, 255, 255, 0.774);
-  margin-bottom:2%;
-}
-.personTop{
-  position:initial;
-  height:70%;
-  width:100%;
-}
-.topL{
-  margin-left:2%;
-  float:left;
-  width:45%;
-}
-.topR{
-  
-  float:right;
-  width:45%;
-}
-.personBottom{
-  display: flex;
-  flex-direction: row;
-  height:30%;
-  width:100%;
-}
-.infoRuta{
- display:flex;
- flex-direction: row;
 }
 
-.java-info{
-position: absolute;
-visibility: hidden;
-width: 10%;
-background-color: white;
+.personTop {
+  position: initial;
+  height: 70%;
+  width: 100%;
 }
-.sql-info{
+
+.topL {
+  margin-left: 2%;
+  float: left;
+  width: 45%;
+}
+
+.topR {
+
+  float: right;
+  width: 45%;
+}
+
+.personBottom {
+  display: flex;
+  flex-direction: row;
+  height: 30%;
+  width: 100%;
+}
+
+.infoRuta {
+  display: flex;
+  flex-direction: row;
+}
+
+.java-info {
   position: absolute;
   visibility: hidden;
   width: 10%;
   background-color: white;
 }
 
-#javaBar{
+.sql-info {
+  position: absolute;
+  visibility: hidden;
+  width: 10%;
+  background-color: white;
+}
+
+#javaBar {
   width: 59%;
   height: 100%;
   background-color: rgb(6, 238, 6);
@@ -437,63 +503,58 @@ background-color: white;
 #sqlBar {
   width: 10%;
   height: 100%;
-  background-color:rgb(6, 238, 6);
+  background-color: rgb(6, 238, 6);
   border-radius: 15px;
 }
 
 #umlBar {
   width: 10%;
-  height:100%;
-  background-color:rgb(6, 238, 6);
+  height: 100%;
+  background-color: rgb(6, 238, 6);
   border-radius: 15px;
 }
 
 #spBar {
   width: 10%;
-  height:100%;
-  background-color:rgb(6, 238, 6);
+  height: 100%;
+  background-color: rgb(6, 238, 6);
   border-radius: 15px;
 }
 
-.bars1{
-  width:50%;
-  padding-bottom:3%;
-}
-.bars2{
-  width:50%;
-  padding-bottom:3%;
+.bars1 {
+  width: 50%;
+  padding-bottom: 3%;
 }
 
-.barProgress{
+.bars2 {
+  width: 50%;
+  padding-bottom: 3%;
+}
+
+.barProgress {
   box-sizing: border-box;
-  margin-left:2%;
+  margin-left: 2%;
   width: 80%;
-  height:12%;
-  border:solid;
-  border-width:2px;
+  height: 12%;
+  border: solid;
+  border-width: 2px;
   border-radius: 15px;
   background-color: white;
 }
-.barTxt{
+
+.barTxt {
   box-sizing: border-box;
   font-size: 12;
-  margin-top:5%;
-  margin-bottom:5%;
-  margin-left:2%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 2%;
 }
-#centerTxt{
+
+#centerTxt {
   text-align: center;
-  position:relative;
-  font-size:16px;
+  position: relative;
+  font-size: 16px;
 }
-
-
-
-
-
-
-
-
 
 .profilDiv {
   padding: 1%;
@@ -528,7 +589,7 @@ background-color: white;
 
 .img1 {
   border-radius: 50%;
-  width: 100%;  
+  width: 100%;
   z-index: -2;
 }
 

@@ -350,21 +350,8 @@ body.sticky-header .header h2 {
   transform: scale(0, 0);
 }
 
-/* Profilsida */
+/* Bildspel */
 /* ---------------------------------------- */
-
-
-
-#pTxt {
-  margin-left: 30%;
-  margin-right: 30%;
-}
-
-.pImg2 {
-  border-radius: 50%;
-  margin-top: 25%;
-  margin-right: 10%;
-}
 
 .bildspel {
   position: fixed;
@@ -413,6 +400,21 @@ body.sticky-header .header h2 {
   to {
     opacity: 1
   }
+}
+
+/* Profilsida */
+/* ---------------------------------------- */
+
+
+#pTxt {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.pImg2 {
+  border-radius: 50%;
+  margin-top: 25%;
+  margin-right: 10%;
 }
 
 .imgDiv {
@@ -556,13 +558,6 @@ body.sticky-header .header h2 {
   font-size: 16px;
 }
 
-.profilDiv {
-  padding: 1%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .navProfil {
   position: absolute;
   height: 60px;
@@ -575,6 +570,16 @@ body.sticky-header .header h2 {
   -moz-box-shadow: 0 0 0 1px #fff;
   -webkit-box-shadow: 0 0 0 1px #fff;
   box-shadow: 0 0 0 1px #fff;
+}
+
+/* Läs mer om Oss */
+/* ---------------------------------------- */
+
+.profilDiv {
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #omOss {
@@ -628,4 +633,83 @@ body.sticky-header .header h2 {
   .prof-descr {
     font-size: 12px;
   }
+}
+
+/* Information om oss */
+/* ---------------------------------------- */
+
+
+.barTitle {
+  box-sizing: border-box;
+  font-size: 12;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 2%;
+}
+
+.barProg {
+  box-sizing: border-box;
+  margin-left: 2%;
+  width: 80%;
+  height: 12%;
+  border: solid;
+  border-width: 2px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.underRubrik {
+  text-align: center;
+  line-height: 0;
+  padding-top: 3%;
+}
+
+.personNamn {
+  margin-left: 1%;
+}
+
+.personInfo {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.personInfoT {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.personInfoTL {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.personInfoTR {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-image: url("../images/frebir.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15%;
+  background-color: #cf3e3e;
+}
+
+.personInfoB {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.personInfoBsizePadding {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-bottom: 3%;
 }

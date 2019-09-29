@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/profilsida.js"></script>
+    <script src="js/bildspel.js"></script>
+    <script src="js/progressBar.js"></script>
 
 </head>
 
-<body onload="progressBar()">
+<body onload="progressBar(), bildSpel()">
 
     <img class="bildspel fade" src="images/abisko.jpg" alt="">
     <img class="bildspel fade" src="images/abisko2.jpg" alt="">
@@ -18,16 +21,13 @@
     <button type="button" id="stop">Stoppa bildspel</button>
     <button type="button" id="start">Fortsätt bildspel</button>
 
-    <div class="java-info">
-        <p>Fredrik har läst en kurs på 7.5 hp i java och är väl erfaren inom språket.</p>
-    </div>
     <div class="sql-info">
         <p>Fredrik har läst en kurs på 7.5 hp inom databaser & sql och är väl erfaren inom språket.</p>
     </div>
     <div class="divPersonInfo">
         <div class="personTop">
             <div class="topL">
-                    <h2 class="pTxt">Fredrik</h2>
+                <h2 class="pTxt">Fredrik</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore
@@ -45,6 +45,9 @@
             </div>
         </div>
         <div class="personBottom">
+                <div class="java-info">
+                        <p>Fredrik har läst en kurs på 7.5 hp i java och är väl erfaren inom språket.</p>
+                    </div>
             <div class="bars1">
                 <h3 class="barTxt">Programmerings kunskaper</h3>
 
@@ -82,9 +85,5 @@
     </div>
 
 </body>
-
-<script src="js/profilsida.js"></script>
-<script src="js/bildspel.js"></script>
-<script src="js/progressBar.js"></script>
 
 </html>

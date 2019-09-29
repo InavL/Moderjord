@@ -1,7 +1,6 @@
 
 var hej = new Boolean(true);
 var index=0;
-bildSpel()
 
 
  function bildSpel() {

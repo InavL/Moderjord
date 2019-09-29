@@ -407,15 +407,12 @@ body.sticky-header .header h2 {
   height:30%;
   width:100%;
 }
-.infoRuta{
- display:flex;
- flex-direction: row;
-}
-
 .java-info{
+  border:solid;
 position: absolute;
 visibility: hidden;
-width: 10%;
+margin-left:40%;
+width: 20%;
 background-color: white;
 }
 .sql-info{

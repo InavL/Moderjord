@@ -28,6 +28,7 @@ body {
 }
 
 .header h1 {
+  font-family: 'Open Sans', sans-serif;
   font-size: 42px;
   color: #fff;
   line-height: 230px;
@@ -110,6 +111,78 @@ body {
   -webkit-box-shadow: 0 0 0 1px #fff;
   box-shadow: 0 0 0 1px #fff;
 }
+
+@media only screen and (max-width: 600px) {
+  .header .navb {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    background-color: #0b4f6c;
+  }
+
+  .header .navb a {
+    display: none;
+  }
+
+  .container {
+    float: left;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 12px
+  }
+  
+  .hamburger1, .hamburger2, .hamburger3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .hamburger1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  .change .hamburger2 {
+    opacity: 0;
+  }
+  
+  .change .hamburger3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+}
+
+/* Sticky Header Style */
+/* ---------------------------------------- */
+body.sticky-header {
+  padding-top: 100px;
+}
+
+body.sticky-header .header {
+  height: 60px;
+  background-color: rgba(13, 105, 145, 1);
+}
+
+body.sticky-header .header h1 {
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
+
+body.sticky-header .header h2 {
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
+
+/* Header without picture */
+/* ---------------------------------------- */
 
 .headerNoPic {
   width: 100%;
@@ -359,31 +432,6 @@ section {
     padding-inline-end: 1%;
     padding-bottom: 0;
   }
-}
-
-/* Sticky Header Style */
-/* ---------------------------------------- */
-body.sticky-header {
-  padding-top: 100px;
-}
-
-body.sticky-header .header {
-  height: 60px;
-  background-color: rgba(13, 105, 145, 1);
-}
-
-body.sticky-header .header h1 {
-  -moz-transform: scale(0, 0);
-  -ms-transform: scale(0, 0);
-  -webkit-transform: scale(0, 0);
-  transform: scale(0, 0);
-}
-
-body.sticky-header .header h2 {
-  -moz-transform: scale(0, 0);
-  -ms-transform: scale(0, 0);
-  -webkit-transform: scale(0, 0);
-  transform: scale(0, 0);
 }
 
 /* Bildspel */

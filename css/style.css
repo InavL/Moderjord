@@ -498,28 +498,28 @@ body.sticky-header .header h2 {
 #javaBar {
   width: 59%;
   height: 100%;
-  background-color: rgb(6, 238, 6);
+  background-color: rgb(13, 105, 145);
   border-radius: 15px;
 }
 
 #sqlBar {
   width: 10%;
   height: 100%;
-  background-color: rgb(6, 238, 6);
+  background-color: rgb(13, 105, 145);
   border-radius: 15px;
 }
 
 #umlBar {
   width: 10%;
   height: 100%;
-  background-color: rgb(6, 238, 6);
+  background-color: rgb(13, 105, 145);
   border-radius: 15px;
 }
 
 #spBar {
   width: 10%;
   height: 100%;
-  background-color: rgb(6, 238, 6);
+  background-color: rgb(13, 105, 145);
   border-radius: 15px;
 }
 
@@ -638,26 +638,6 @@ body.sticky-header .header h2 {
 /* Information om oss */
 /* ---------------------------------------- */
 
-
-.barTitle {
-  box-sizing: border-box;
-  font-size: 12;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 2%;
-}
-
-.barProg {
-  box-sizing: border-box;
-  margin-left: 2%;
-  width: 80%;
-  height: 12%;
-  border: solid;
-  border-width: 2px;
-  border-radius: 15px;
-  background-color: white;
-}
-
 .underRubrik {
   text-align: center;
   line-height: 0;
@@ -698,7 +678,7 @@ body.sticky-header .header h2 {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15%;
-  background-color: #cf3e3e;
+  background-color: #ffffff;
 }
 
 .personInfoB {
@@ -712,4 +692,77 @@ body.sticky-header .header h2 {
   flex-direction: column;
   width: 50%;
   padding-bottom: 3%;
+}
+
+.barTitle {
+  box-sizing: border-box;
+  font-size: 12;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 2%;
+}
+
+.barProg {
+  margin-left: 2%;
+  height: 1.25em;
+  border: solid;
+  border-width: 2px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+#javaProg {
+  width: 59%;
+  height: 100%;
+  background-color: rgb(13, 105, 145);
+  border-radius: 15px;
+}
+
+#sqlProg {
+  width: 10%;
+  height: 100%;
+  background-color: rgb(13, 105, 145);
+  border-radius: 15px;
+}
+
+#umlProg {
+  width: 10%;
+  height: 100%;
+  background-color: rgb(13, 105, 145);
+  border-radius: 15px;
+}
+
+#spanProg {
+  width: 10%;
+  height: 100%;
+  background-color: rgb(13, 105, 145);
+  border-radius: 15px;
+}
+
+#progTxtJava {
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  color: white;
+}
+
+#progTxtSQL {
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  color: white;
+}
+
+#progTxtUML {
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  color: white;
+}
+
+#progTxtSpan {
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  color: white;
 }

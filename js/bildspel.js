@@ -10,7 +10,7 @@ function bildspel() {
   }
   if (hej == true) {
   index++;
-  var timer =setTimeout(bildspel,2000);
+  var timer =setTimeout(bildspel,4000);
   } 
   if (index > bilder.length) {
     index = 1

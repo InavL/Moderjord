@@ -1,6 +1,6 @@
 var hej = new Boolean(true);
 var index=0;
-
+bildspel()
 
 function bildspel() {
   var i;

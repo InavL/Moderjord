@@ -55,7 +55,7 @@ body {
   transition: all 0.3s ease;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .header h1 {
     font-size: 2em;
     color: #fff;
@@ -146,7 +146,7 @@ body {
   height: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .header .navb {
     position: absolute;
     bottom: 0;
@@ -336,7 +336,7 @@ pre {
   padding-top: 5%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   #wSpace {
     padding-top: 15%;
   }
@@ -446,7 +446,7 @@ section {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .ddb-footer-logo-image {
     background-size: 100%;
     height: 32px;
@@ -810,7 +810,28 @@ background-color: white;
   display: block;
   width: 100%;
   height: auto;
+}
+
+#alvJoh {
+  background-image: url("../images/alvin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  border-radius: 15%;
+  background-color: #ffffff;
+}
+
+#freBir {
   background-image: url("../images/frebir.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  border-radius: 15%;
+  background-color: #ffffff;
+}
+
+#andSil {
+  background-image: url("../images/andsil.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 
@@ -925,7 +946,7 @@ background-color: white;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
   .underRubrik {
     font-size: 2em;

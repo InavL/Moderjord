@@ -113,18 +113,18 @@ body {
 }
 
 .popupMenu a {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   display: block;
   border: black;
+  border: solid;
   border-radius: 5%;
-  line-height: 1;
+  line-height: 1.5;
   font-size: 24px;
   text-align: center;
   text-decoration: none;
   padding: 1% 2%;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
+  margin: 1%;
 }
 
 .popupMenu a:hover {
@@ -169,12 +169,12 @@ body {
     padding-bottom: 0.7em;
     padding-right: 0.8em;
   }
-  
+
   .container:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: black;
   }
-  
+
   .hamburger1,
   .hamburger2,
   .hamburger3 {
@@ -184,16 +184,16 @@ body {
     margin: 6px 0;
     transition: 0.4s;
   }
-  
+
   .change .hamburger1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
   }
-  
+
   .change .hamburger2 {
     opacity: 0;
   }
-  
+
   .change .hamburger3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
@@ -397,7 +397,7 @@ section {
 
 .ddb-footer-logo-image {
   display: block;
-  background-image: url("../images/dnd-beyond-logo.svg");
+  background-image: url("../images/footer.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 64px;
@@ -514,7 +514,7 @@ section {
 }
 
 .divPersonInfo {
-  position:absolute;
+  position: absolute;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -550,13 +550,14 @@ section {
   height: 30%;
   width: 100%;
 }
-.java-info{
-  border:solid;
-position: absolute;
-visibility: hidden;
-margin-left:40%;
-width: 20%;
-background-color: white;
+
+.java-info {
+  border: solid;
+  position: absolute;
+  visibility: hidden;
+  margin-left: 40%;
+  width: 20%;
+  background-color: white;
 }
 
 .sql-info {
@@ -564,34 +565,6 @@ background-color: white;
   visibility: hidden;
   width: 10%;
   background-color: white;
-}
-
-#javaBar {
-  width: 60%;
-  height: 100%;
-  background-color: rgb(13, 105, 145);
-  border-radius: 15px;
-}
-
-#sqlBar {
-  width: 10%;
-  height: 100%;
-  background-color: rgb(13, 105, 145);
-  border-radius: 15px;
-}
-
-#umlBar {
-  width: 10%;
-  height: 100%;
-  background-color: rgb(13, 105, 145);
-  border-radius: 15px;
-}
-
-#spanskaBar {
-  width: 10%;
-  height: 100%;
-  background-color: rgb(13, 105, 145);
-  border-radius: 15px;
 }
 
 .divBottomL {
@@ -763,11 +736,24 @@ background-color: white;
   height: auto;
 }
 
+.personInfoTRMob {
+  display: none;
+}
+
 #alvJoh {
   background-image: url("../images/alvin.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
+  border-radius: 15%;
+  background-color: #ffffff;
+}
+
+#alvJoh1 {
+  background-image: url("../images/alvin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border-radius: 15%;
   background-color: #ffffff;
 }
@@ -776,7 +762,16 @@ background-color: white;
   background-image: url("../images/frebir.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
+  border-radius: 15%;
+  background-color: #ffffff;
+}
+
+#freBir1 {
+  background-image: url("../images/frebir.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border-radius: 15%;
   background-color: #ffffff;
 }
@@ -785,7 +780,16 @@ background-color: white;
   background-image: url("../images/andsil.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
+  border-radius: 15%;
+  background-color: #ffffff;
+}
+
+#andSil1 {
+  background-image: url("../images/andsil.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border-radius: 15%;
   background-color: #ffffff;
 }
@@ -828,29 +832,85 @@ background-color: white;
   background-color: white;
 }
 
-#javaProg {
-  width: 59%;
+#aCProg {
+  width: 80%;
   height: 100%;
   background-color: rgb(13, 105, 145);
   border-radius: 15px;
 }
 
-#sqlProg {
-  width: 10%;
+#aSQLProg {
+  width: 65%;
   height: 100%;
   background-color: rgb(13, 105, 145);
   border-radius: 15px;
 }
 
-#umlProg {
-  width: 10%;
+#aLinProg {
+  width: 50%;
   height: 100%;
   background-color: rgb(13, 105, 145);
   border-radius: 15px;
 }
 
-#spanProg {
-  width: 10%;
+#aBashProg {
+  width: 45%;
+  height: 100%;
+  background-color: rgb(13, 105, 145);
+  border-radius: 15px;
+}
+
+#progTxtC {
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  color: white;
+}
+
+#progTxtaSQL {
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  color: white;
+}
+
+#progTxtLin {
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  color: white;
+}
+
+#progTxtBash {
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  color: white;
+}
+
+#anJavaProg {
+  width: 75%;
+  height: 100%;
+  background-color: rgb(13, 105, 145);
+  border-radius: 15px;
+}
+
+#anPythonProg {
+  width: 30%;
+  height: 100%;
+  background-color: rgb(13, 105, 145);
+  border-radius: 15px;
+}
+
+#anUMLProg {
+  width: 47%;
+  height: 100%;
+  background-color: rgb(13, 105, 145);
+  border-radius: 15px;
+}
+
+#anSQLProg {
+  width: 82%;
   height: 100%;
   background-color: rgb(13, 105, 145);
   border-radius: 15px;
@@ -863,7 +923,7 @@ background-color: white;
   color: white;
 }
 
-#progTxtSQL {
+#progTxtPython {
   text-align: center;
   position: relative;
   font-size: 16px;
@@ -877,7 +937,63 @@ background-color: white;
   color: white;
 }
 
-#progTxtSpan {
+#progTxtanSQL {
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  color: white;
+}
+
+#fJavaProg {
+  width: 95%;
+  height: 100%;
+  background-color: rgb(13, 105, 145);
+  border-radius: 15px;
+}
+
+#fCProg {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(13, 105, 145);
+  border-radius: 15px;
+}
+
+#fUnityProg {
+  width: 30%;
+  height: 100%;
+  background-color: rgb(13, 105, 145);
+  border-radius: 15px;
+}
+
+#fSQLProg {
+  width: 45%;
+  height: 100%;
+  background-color: rgb(13, 105, 145);
+  border-radius: 15px;
+}
+
+#progTxtfJava {
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  color: white;
+}
+
+#progTxtfC {
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  color: white;
+}
+
+#progTxtfUnity {
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  color: white;
+}
+
+#progTxtfSQL {
   text-align: center;
   position: relative;
   font-size: 16px;
@@ -890,10 +1006,15 @@ background-color: white;
     width: 0%;
     background-color: #ffffff;
   }
-  
 
   .personNamn {
     display: none;
+  }
+
+  .personInfoTRMob {
+    display: flex;
+    width: 100%;
+    height: 30em;
   }
 }
 

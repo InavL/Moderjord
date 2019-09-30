@@ -1,8 +1,195 @@
-function progressBar() {
-    var bar = document.getElementById("javaBar")
-    var progress = document.getElementById("centerTxt")
+// Andreas
+
+function pBarAnJava() {
+    var bar = document.getElementById("anJavaProg")
+    var progress = document.getElementById("progTxtJava")
     var width = 0;
     var x = setInterval(frame, 50);
+    isCCalled = true;
+
+    function frame() {
+        if (width >= 75) {
+            clearInterval(x);
+        } else {
+            width++
+            bar.style.width = width + '%';
+            progress.innerHTML = width + '%';
+        }
+    }
+}
+
+function pBarAnPython() {
+    var bar = document.getElementById("anPythonProg")
+    var progress = document.getElementById("progTxtPython")
+    var width = 0;
+    var x = setInterval(frame, 50);
+    isCCalled = true;
+
+    function frame() {
+        if (width >= 30) {
+            clearInterval(x);
+        } else {
+            width++
+            bar.style.width = width + '%';
+            progress.innerHTML = width + '%';
+        }
+    }
+}
+
+function pBarAnUML() {
+    var bar = document.getElementById("anUMLProg")
+    var progress = document.getElementById("progTxtUML")
+    var width = 0;
+    var x = setInterval(frame, 50);
+    isCCalled = true;
+
+    function frame() {
+        if (width >= 47) {
+            clearInterval(x);
+        } else {
+            width++
+            bar.style.width = width + '%';
+            progress.innerHTML = width + '%';
+        }
+    }
+}
+
+function pBarAnSQL() {
+    var bar = document.getElementById("anSQLProg")
+    var progress = document.getElementById("progTxtanSQL")
+    var width = 0;
+    var x = setInterval(frame, 50);
+    isCCalled = true;
+
+    function frame() {
+        if (width >= 82) {
+            clearInterval(x);
+        } else {
+            width++
+            bar.style.width = width + '%';
+            progress.innerHTML = width + '%';
+        }
+    }
+}
+
+// Alvin
+
+function pBarAC() {
+    var bar = document.getElementById("aCProg")
+    var progress = document.getElementById("progTxtC")
+    var width = 0;
+    var x = setInterval(frame, 50);
+    isCCalled = true;
+
+    function frame() {
+        if (width >= 80) {
+            clearInterval(x);
+        } else {
+            width++
+            bar.style.width = width + '%';
+            progress.innerHTML = width + '%';
+        }
+    }
+}
+
+function pBarAC() {
+    var bar = document.getElementById("aCProg")
+    var progress = document.getElementById("progTxtC")
+    var width = 0;
+    var x = setInterval(frame, 50);
+    isCCalled = true;
+
+    function frame() {
+        if (width >= 80) {
+            clearInterval(x);
+        } else {
+            width++
+            bar.style.width = width + '%';
+            progress.innerHTML = width + '%';
+        }
+    }
+}
+
+function pBarASQL() {
+    var bar = document.getElementById("aSQLProg")
+    var progress = document.getElementById("progTxtaSQL")
+    var width = 0;
+    var x = setInterval(frame, 50);
+    isSQLCalled = true;
+
+    function frame() {
+        if (width >= 65) {
+            clearInterval(x);
+        } else {
+            width++
+            bar.style.width = width + '%';
+            progress.innerHTML = width + '%';
+        }
+    }
+}
+
+function pBarALin() {
+    var bar = document.getElementById("aLinProg")
+    var progress = document.getElementById("progTxtLin")
+    var width = 0;
+    var x = setInterval(frame, 50);
+    isLinCalled = true;
+
+    function frame() {
+        if (width >= 50) {
+            clearInterval(x);
+        } else {
+            width++
+            bar.style.width = width + '%';
+            progress.innerHTML = width + '%';
+        }
+    }
+}
+
+function pBarABash() {
+    var bar = document.getElementById("aBashProg")
+    var progress = document.getElementById("progTxtBash")
+    var width = 0;
+    var x = setInterval(frame, 50);
+    isBashCalled = true;
+
+    function frame() {
+        if (width >= 45) {
+            clearInterval(x);
+        } else {
+            width++
+            bar.style.width = width + '%';
+            progress.innerHTML = width + '%';
+        }
+    }
+}
+
+// Fredrik
+
+function pBarFJava() {
+    var bar = document.getElementById("fJavaProg")
+    var progress = document.getElementById("progTxtfJava")
+    var width = 0;
+    var x = setInterval(frame, 50);
+    isBashCalled = true;
+
+    function frame() {
+        if (width >= 95) {
+            clearInterval(x);
+        } else {
+            width++
+            bar.style.width = width + '%';
+            progress.innerHTML = width + '%';
+        }
+    }
+}
+
+function pBarFC() {
+    var bar = document.getElementById("fCProg")
+    var progress = document.getElementById("progTxtfC")
+    var width = 0;
+    var x = setInterval(frame, 50);
+    isBashCalled = true;
 
     function frame() {
         if (width >= 60) {
@@ -14,46 +201,16 @@ function progressBar() {
         }
     }
 }
-function progressBar() {
-    var bar = document.getElementById("sqlBar")
-    var progress = document.getElementById("centerTxt")
+
+function pBarFUnity() {
+    var bar = document.getElementById("fUnityProg")
+    var progress = document.getElementById("progTxtfUnity")
     var width = 0;
     var x = setInterval(frame, 50);
+    isBashCalled = true;
 
     function frame() {
-        if (width >= 60) {
-            clearInterval(x);
-        } else {
-            width++
-            bar.style.width = width + '%';
-            progress.innerHTML = width + '%';
-        }
-    }
-}
-function progressBar() {
-    var bar = document.getElementById("umlBar")
-    var progress = document.getElementById("centerTxt")
-    var width = 0;
-    var x = setInterval(frame, 50);
-
-    function frame() {
-        if (width >= 60) {
-            clearInterval(x);
-        } else {
-            width++
-            bar.style.width = width + '%';
-            progress.innerHTML = width + '%';
-        }
-    }
-}
-function progressBar() {
-    var bar = document.getElementById("spanskaBar")
-    var progress = document.getElementById("centerTxt")
-    var width = 0;
-    var x = setInterval(frame, 50);
-
-    function frame() {
-        if (width >= 60) {
+        if (width >= 30) {
             clearInterval(x);
         } else {
             width++
@@ -63,89 +220,20 @@ function progressBar() {
     }
 }
 
+function pBarFSQL() {
+    var bar = document.getElementById("fSQLProg")
+    var progress = document.getElementById("progTxtfSQL")
+    var width = 0;
+    var x = setInterval(frame, 50);
+    isBashCalled = true;
 
-
-
-
-
-
-var isJavaCalled = false;
-var isSQLCalled = false;
-var isUMLCalled = false;
-var isSpanCalled = false;
-
-function progressBarMain() {
-    
-    if (!isJavaCalled) {
-        var bar = document.getElementById("javaProg")
-        var progress = document.getElementById("progTxtJava")
-        var width = 0;
-        var x = setInterval(frame, 50);
-        isJavaCalled = true;
-
-        function frame() {
-            if (width >= 60) {
-                clearInterval(x);
-            } else {
-                width++
-                bar.style.width = width + '%';
-                progress.innerHTML = width + '%';
-            }
-        }
-    }
-
-    else if (!isSQLCalled) {
-        var bar = document.getElementById("sqlProg")
-        var progress = document.getElementById("progTxtSQL")
-        var width = 0;
-        var x = setInterval(frame, 50);
-        isSQLCalled = true;
-
-        function frame() {
-            if (width >= 60) {
-                clearInterval(x);
-            } else {
-                width++
-                bar.style.width = width + '%';
-                progress.innerHTML = width + '%';
-            }
-        }
-    }
-
-    else if (!isUMLCalled) {
-        var bar = document.getElementById("umlProg")
-        var progress = document.getElementById("progTxtUML")
-        var width = 0;
-        var x = setInterval(frame, 50);
-        isUMLCalled = true;
-
-        function frame() {
-            if (width >= 60) {
-                clearInterval(x);
-            } else {
-                width++
-                bar.style.width = width + '%';
-                progress.innerHTML = width + '%';
-            }
-        }
-    }
-
-    else if (!isSpanCalled) {
-        var bar = document.getElementById("spanProg")
-        var progress = document.getElementById("progTxtSpan")
-        var width = 0;
-        var x = setInterval(frame, 50);
-        isSpanCalled = true;
-
-        function frame() {
-            if (width >= 60) {
-                clearInterval(x);
-            } else {
-                width++
-                bar.style.width = width + '%';
-                progress.innerHTML = width + '%';
-            }
+    function frame() {
+        if (width >= 45) {
+            clearInterval(x);
+        } else {
+            width++
+            bar.style.width = width + '%';
+            progress.innerHTML = width + '%';
         }
     }
 }
-

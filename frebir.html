@@ -2,33 +2,59 @@
 <html lang="sv">
 
 <head>
-    <title>Portfolio</title>
     <meta charset="utf-8">
+    <title>Fredrik Birgersson</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/profilsida.js"></script>
-    <script src="js/bildspel.js"></script>
+    <script src="js/navbarscroll.js"></script>
+    <script src="js/pagescroll.js"></script>
     <script src="js/progressBar.js"></script>
-
+    <script src="js/hamburger.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body onload="progressBarMain(), bildspel()">
+<body onload="pBarFJava(), pBarFC(), pBarFUnity(), pBarFSQL()">
 
-    <img class="bildspel" src="images/abisko.jpg" alt=""></img>
-    <img class="bildspel" src="images/abisko2.jpg" alt=""></img>
-
-    <button type="button" id="startStop">Stoppa bildspel</button>
-
-    <div class="sql-info">
-        <p>Fredrik har läst en kurs på 7.5 hp inom databaser & sql och är väl erfaren inom språket.</p>
+    <div class="header">
+        <h1>Fredrik Birgersson</h1>
+        <h2>Systemutvecklingsstudent</h2>
+        <div class="navb">
+            <div class="container" onclick="hamburger(this), hamMenu1()">
+                <div class="hamburger1"></div>
+                <div class="hamburger2"></div>
+                <div class="hamburger3"></div>
+            </div>
+            <a href="main.html">Hem</a>
+            <a href="main.html#omOss">Vilka är vi?</a>
+            <a href="main.html#projekt">Projekt</a>
+            <a href="main.html#kontakt">Kontakt</a>
+        </div>
     </div>
-    <div class="divPersonInfo">
-        <div class="personTop">
-            <div class="topL">
-                <h2 class="pTxt">Fredrik</h2>
+
+    <div id="wSpace"></div>
+
+    <div class="popupMenu" id="pop">
+        <a href="main.html">Hem</a>
+        <a href="main.html#omOss">Vilka är vi?</a>
+        <a href="main.html#projekt">Projekt</a>
+        <a href="main.html#kontakt">Kontakt</a>
+    </div>
+
+    <div class="personInfo">
+        <div class="personInfoTRMob" id="freBir"></div>
+        <div class="personInfoT">
+            <div class="personInfoTL">
+                <h2 class="personNamn">Fredrik Birgersson</h2>
                 <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est
+                    laborum.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -40,52 +66,79 @@
                     laborum.
                 </p>
             </div>
-            <div class="topR">
-                <img class="pImg2" src="images/frebir.jpg" alt="">
-            </div>
+            <div class="personInfoTR" id="freBir"></div>
         </div>
-        <div class="personBottom">
-            <div class="java-info">
-                <p>Fredrik har läst en kurs på 7.5 hp i java och är väl erfaren inom språket.</p>
-            </div>
-            <div class="divBottomR">
-                <h3 class="barTxt">Programmerings kunskaper</h3>
-
-                <h3 class="barTxt">Java</h3>
+        <div class="personInfoB">
+            <div class="personInfoBsizePadding">
+                <h3 class="barTitle">Programmerings kunskaper</h3>
+                <h3 class="barRub">Java</h3>
                 <div class="barProg">
-                    <div id="javaProg">
-                        <div id="progTxtJava"></div>
+                    <div id="fJavaProg">
+                        <div id="progTxtfJava"></div>
                     </div>
                 </div>
-
-                <h3 class="barTxt">Databaser & sql</h3>
+                <h3 class="barRub">C#</h3>
                 <div class="barProg">
-                    <div id="sqlProg">
-                        <div id="progTxtSQL"></div>
+                    <div id="fCProg">
+                        <div id="progTxtfC"></div>
                     </div>
                 </div>
             </div>
-            <div class="divBottomR">
-                <h3 class="barTxt">Övriga kvalifikationer</h3>
-
-                <h3 class="barTxt">UML</h3>
+            <div class="personInfoBsizePadding">
+                <h3 class="barTitle">Övriga akademiska erfarenheter</h3>
+                <h3 class="barRub">Unity</h3>
                 <div class="barProg">
-                        <div id="umlProg">
-                            <div id="progTxtUML"></div>
-                        </div>
+                    <div id="fUnityProg">
+                        <div id="progTxtfUnity"></div>
                     </div>
-
-                <h3 class="barTxt">Spanska</h3>
+                </div>
+                <h3 class="barRub">SQL</h3>
                 <div class="barProg">
-                        <div id="spanProg">
-                            <div id="progTxtSpan"></div>
-                        </div>
+                    <div id="fSQLProg">
+                        <div id="progTxtfSQL"></div>
                     </div>
+                </div>
             </div>
         </div>
-
     </div>
 
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-upper">
+                <div class="footer-logo">
+                    <a href="/" class="ddb-footer-logo-image" id="botlogo"></a>
+                    <div class="footer-logo-byline">Play With Advantage</div>
+                </div>
+                <ul class="footer-list">
+                    <li class="ddb-footer-list-label">Hem</li>
+                    <li class="ddb-footer-list-item">
+                        <a href="main.html#omOss" class="link">Vilka är vi?</a>
+                    </li>
+                    <li class="ddb-footer-list-item">
+                        <a href="main.html#projekt" class="link">Projekt</a>
+                    </li>
+                    <li class="ddb-footer-list-item">
+                            <a href="main.html#kontakt" class="link">Kontakt</a>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="ddb-footer-list-label">Profiler</li>
+                    <li class="ddb-footer-list-item">
+                        <a href="andsil.html" class="link">Andreas</a>
+                    </li>
+                    <li class="ddb-footer-list-item">
+                        <a href="alvinProfi.html" class="link">Alvin</a>
+                    </li>
+                    <li class="ddb-footer-list-item">
+                        <a href="frebir.html" class="link">Fredrik</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-lower">
+
+        </div>
+    </div>
 </body>
 
 </html>

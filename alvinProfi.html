@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body onload="progressBarMain()">
+<body onload="pBarAC(), pBarASQL(), pBarALin(), pBarABash()">
 
     <div class="header">
         <h1>Alvin Johansson</h1>
@@ -24,25 +24,24 @@
                 <div class="hamburger2"></div>
                 <div class="hamburger3"></div>
             </div>
-            <a href="#top">Hem</a>
-            <a href="#projekt">Projekt</a>
-            <a href="#about">Någonting</a>
-            <a href="#omOss">Om oss</a>
-            <a href="">Kontakt</a>
+            <a href="main.html">Hem</a>
+            <a href="main.html#omOss">Vilka är vi?</a>
+            <a href="main.html#projekt">Projekt</a>
+            <a href="main.html#kontakt">Kontakt</a>
         </div>
     </div>
 
     <div id="wSpace"></div>
 
     <div class="popupMenu" id="pop">
-        <a href="#top">Hem</a>
-        <a href="#projekt">Projekt</a>
-        <a href="#about">Någonting</a>
-        <a href="#omOss">Om oss</a>
-        <a href="">Kontakt</a>
+        <a href="main.html">Hem</a>
+        <a href="main.html#omOss">Vilka är vi?</a>
+        <a href="main.html#projekt">Projekt</a>
+        <a href="main.html#kontakt">Kontakt</a>
     </div>
 
     <div class="personInfo">
+        <div class="personInfoTRMob" id="alvJoh"></div>
         <div class="personInfoT">
             <div class="personInfoTL">
                 <h2 class="personNamn">Alvin Johansson</h2>
@@ -72,31 +71,31 @@
         <div class="personInfoB">
             <div class="personInfoBsizePadding">
                 <h3 class="barTitle">Programmerings kunskaper</h3>
-                <h3 class="barRub">Java</h3>
+                <h3 class="barRub">C#</h3>
                 <div class="barProg">
-                    <div id="javaProg">
-                        <div id="progTxtJava"></div>
+                    <div id="aCProg">
+                        <div id="progTxtC"></div>
                     </div>
                 </div>
-                <h3 class="barRub">Databaser & sql</h3>
+                <h3 class="barRub">SQL</h3>
                 <div class="barProg">
-                    <div id="sqlProg">
-                        <div id="progTxtSQL"></div>
+                    <div id="aSQLProg">
+                        <div id="progTxtaSQL"></div>
                     </div>
                 </div>
             </div>
             <div class="personInfoBsizePadding">
-                <h3 class="barTitle">Programmerings kunskaper</h3>
-                <h3 class="barRub">UML</h3>
+                <h3 class="barTitle">Övriga akademiska erfarenheter</h3>
+                <h3 class="barRub">GNU/Linux</h3>
                 <div class="barProg">
-                    <div id="umlProg">
-                        <div id="progTxtUML"></div>
+                    <div id="aLinProg">
+                        <div id="progTxtLin"></div>
                     </div>
                 </div>
-                <h3 class="barRub">Spanska</h3>
+                <h3 class="barRub">bash</h3>
                 <div class="barProg">
-                    <div id="spanProg">
-                        <div id="progTxtSpan"></div>
+                    <div id="aBashProg">
+                        <div id="progTxtBash"></div>
                     </div>
                 </div>
             </div>
@@ -111,22 +110,27 @@
                     <div class="footer-logo-byline">Play With Advantage</div>
                 </div>
                 <ul class="footer-list">
-                    <li class="ddb-footer-list-label">Lite länkar</li>
+                    <li class="ddb-footer-list-label">Hem</li>
                     <li class="ddb-footer-list-item">
-                        <a href="" class="link">Compendium</a>
+                        <a href="main.html#omOss" class="link">Vilka är vi?</a>
                     </li>
                     <li class="ddb-footer-list-item">
-                        <a href="" class="link">Builder</a>
+                        <a href="main.html#projekt" class="link">Projekt</a>
+                    </li>
+                    <li class="ddb-footer-list-item">
+                            <a href="main.html#kontakt" class="link">Kontakt</a>
                     </li>
                 </ul>
                 <ul class="footer-list">
-                    <li class="ddb-footer-list-label">Flera länkar</li>
+                    <li class="ddb-footer-list-label">Profiler</li>
                     <li class="ddb-footer-list-item">
-                        <a href="" class="link">Characters</a>
+                        <a href="andsil.html" class="link">Andreas</a>
                     </li>
-
                     <li class="ddb-footer-list-item">
-                        <a href="" class="link">Changelog</a>
+                        <a href="alvinProfi.html" class="link">Alvin</a>
+                    </li>
+                    <li class="ddb-footer-list-item">
+                        <a href="frebir.html" class="link">Fredrik</a>
                     </li>
                 </ul>
             </div>

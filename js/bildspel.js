@@ -13,7 +13,7 @@ function bildspel() {
   if (index > bilder.length) {
     index = 1
   }
-  bilder[index - 1].style.display = "block";
+  bilder[index - 1].style.display="block";
   if (hej == true) {
     setTimeout(bildSpel, 4000);
   } else {

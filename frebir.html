@@ -14,10 +14,10 @@
 
 </head>
 
-<body onload="progressBar(), bildSpel()">
+<body onload="progressBarMain(), bildspel()">
 
-    <img class="bildspel fade" src="images/abisko.jpg" alt="">
-    <img class="bildspel fade" src="images/abisko2.jpg" alt="">
+    <img class="bildspel" src="images/abisko.jpg" alt="">
+    <img class="bildspel" src="images/abisko2.jpg" alt="">
 
     <button type="button" id="stop">Stoppa bildspel</button>
     <button type="button" id="start">Fortsätt bildspel</button>
@@ -46,44 +46,47 @@
             </div>
         </div>
         <div class="personBottom">
-                <div class="java-info">
-                        <p>Fredrik har läst en kurs på 7.5 hp i java och är väl erfaren inom språket.</p>
-                    </div>
-            <div class="bars1">
+            <div class="java-info">
+                <p>Fredrik har läst en kurs på 7.5 hp i java och är väl erfaren inom språket.</p>
+            </div>
+            <div class="divBottomR">
                 <h3 class="barTxt">Programmerings kunskaper</h3>
 
-
                 <h3 class="barTxt">Java</h3>
-                <div class="barProgress">
-                    <div id="javaBar">
-                        <div id="centerTxt"></div>
+                <div class="barProg">
+                    <div id="javaProg">
+                        <div id="progTxtJava"></div>
                     </div>
                 </div>
 
                 <h3 class="barTxt">Databaser & sql</h3>
-                <div class="barProgress">
-                    <div id="sqlBar">
+                <div class="barProg">
+                    <div id="sqlProg">
+                        <div id="progTxtSQL"></div>
                     </div>
                 </div>
             </div>
-            <div class="bars2">
+            <div class="divBottomR">
                 <h3 class="barTxt">Övriga kvalifikationer</h3>
 
                 <h3 class="barTxt">UML</h3>
-                <div class="barProgress">
-                    <div id="umlBar">
+                <div class="barProg">
+                        <div id="umlProg">
+                            <div id="progTxtUML"></div>
+                        </div>
                     </div>
-                </div>
 
                 <h3 class="barTxt">Spanska</h3>
-                <div class="barProgress">
-                    <div id="spBar">
+                <div class="barProg">
+                        <div id="spanProg">
+                            <div id="progTxtSpan"></div>
+                        </div>
                     </div>
-                </div>
             </div>
         </div>
 
     </div>
 
 </body>
+
 </html>

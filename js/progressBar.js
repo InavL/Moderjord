@@ -14,6 +14,60 @@ function progressBar() {
         }
     }
 }
+function progressBar() {
+    var bar = document.getElementById("sqlBar")
+    var progress = document.getElementById("centerTxt")
+    var width = 0;
+    var x = setInterval(frame, 50);
+
+    function frame() {
+        if (width >= 60) {
+            clearInterval(x);
+        } else {
+            width++
+            bar.style.width = width + '%';
+            progress.innerHTML = width + '%';
+        }
+    }
+}
+function progressBar() {
+    var bar = document.getElementById("umlBar")
+    var progress = document.getElementById("centerTxt")
+    var width = 0;
+    var x = setInterval(frame, 50);
+
+    function frame() {
+        if (width >= 60) {
+            clearInterval(x);
+        } else {
+            width++
+            bar.style.width = width + '%';
+            progress.innerHTML = width + '%';
+        }
+    }
+}
+function progressBar() {
+    var bar = document.getElementById("spanskaBar")
+    var progress = document.getElementById("centerTxt")
+    var width = 0;
+    var x = setInterval(frame, 50);
+
+    function frame() {
+        if (width >= 60) {
+            clearInterval(x);
+        } else {
+            width++
+            bar.style.width = width + '%';
+            progress.innerHTML = width + '%';
+        }
+    }
+}
+
+
+
+
+
+
 
 var isJavaCalled = false;
 var isSQLCalled = false;

@@ -116,15 +116,15 @@ body {
   color: rgb(255, 255, 255);
   display: block;
   border: black;
+  border: solid;
   border-radius: 5%;
-  line-height: 1;
+  line-height: 1.5;
   font-size: 24px;
   text-align: center;
   text-decoration: none;
   padding: 1% 2%;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
+  margin: 1%;
 }
 
 .popupMenu a:hover {
@@ -939,7 +939,7 @@ section {
 }
 
 #anPythonProg {
-  width: 4%;
+  width: 30%;
   height: 100%;
   background-color: rgb(13, 105, 145);
   border-radius: 15px;
@@ -1042,8 +1042,6 @@ section {
   font-size: 16px;
   color: white;
 }
-
-
 
 @media only screen and (max-width: 850px) {
   .personInfoTR {

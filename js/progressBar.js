@@ -26,7 +26,7 @@ function pBarAnPython() {
     isCCalled = true;
 
     function frame() {
-        if (width >= 4) {
+        if (width >= 30) {
             clearInterval(x);
         } else {
             width++

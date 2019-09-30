@@ -483,21 +483,14 @@ section {
 
 .bildspel {
   position: fixed;
-  width: 100%;
+  height:auto;
+  width: auto;
+  display:none;
 }
-
-#stop {
-  float: right;
+#startStop {
   position: absolute;
-  position: fixed;
-  margin-bottom: 2%;
-}
-
-#start {
   margin-top: 2%;
   float: right;
-  position: absolute;
-  position: fixed;
 }
 
 .fade {

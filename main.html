@@ -9,16 +9,20 @@
     <script src="js/navbarscroll.js"></script>
     <script src="js/pagescroll.js"></script>
     <script src="js/progressBar.js"></script>
+    <script src="js/hamburger.js"></script>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-
-
 <body>
-    <div class="header">
+    <div class="header" id="header1">
         <h1>Placeholder portfolio text!</h1>
         <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
         <div class="navb">
+            <div class="container" onclick="hamburger(this), hamMenu1()">
+                <div class="hamburger1"></div>
+                <div class="hamburger2"></div>
+                <div class="hamburger3"></div>
+            </div>
             <a href="#top">Hem</a>
             <a href="#projekt">Projekt</a>
             <a href="#about">Någonting</a>
@@ -27,6 +31,14 @@
         </div>
     </div>
     <div id="wSpace"></div>
+
+    <div class="popupMenu" id="pop">
+        <a href="#top">Hem</a>
+        <a href="#projekt">Projekt</a>
+        <a href="#about">Någonting</a>
+        <a href="#omOss">Om oss</a>
+        <a href="">Kontakt</a>
+    </div>
 
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore

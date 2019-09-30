@@ -5,14 +5,16 @@
     <meta charset="utf-8">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/navbarscroll.js"></script>
     <script src="js/pagescroll.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/bildspel.js"></script>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body onload="bildspel()">
     <div class="header" id="header1">
         <h1>Placeholder portfolio text!</h1>
         <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
@@ -163,6 +165,64 @@
             </p>
         </div>
     </div>
+    <h2 class="projekt">Vårt Projekt</h2>
+    <div class="projektsida">
+            <div class="projektslides">
+        <img class="bildspel fade" src="images/projekt.jpg" alt="">
+        <img class="bildspel fade" src="images/projekt2.jpg" alt="">
+        <input onclick="change()" type="button" value="Stoppa bildspel" id="startStop"></input>
+        <div class="dots"></div>
+    </div>
+        <div class="projektInfo">
+                <h3 class="projekt">Syftet med projektet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat.
+                    </br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo
+                                    consequat.
+                                </br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore
+                                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo
+                                        consequat.</p>
+        </div>
+</div>
+    <h3 class="projekt">Tillvägagång</h3>
+   
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.
+        </br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
+                consequat.</p>
+            <h3 class="projekt">Projektets tidsplan</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. </br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo
+                    consequat.</p>
 
     <div class="footer">
         <div class="footer-wrapper">

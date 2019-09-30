@@ -478,48 +478,6 @@ section {
   }
 }
 
-/* Bildspel */
-/* ---------------------------------------- */
-
-.bildspel {
-  position: fixed;
-  height:auto;
-  width: auto;
-  display:none;
-}
-#startStop {
-  position: absolute;
-  margin-top: 2%;
-  float: right;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 3s;
-  animation-name: fade;
-  animation-duration: 3s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4
-  }
-
-  to {
-    opacity: 1
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4
-  }
-
-  to {
-    opacity: 1
-  }
-}
-
 /* Profilsida */
 /* ---------------------------------------- */
 
@@ -960,12 +918,85 @@ background-color: white;
     margin-right: 5%;
   }
 
-  .barTitle {
+.barTitle {
     box-sizing: border-box;
     font-size: 12;
     margin-top: 5%;
     margin-bottom: 5%;
     margin-left: 2%;
+}
+
+}
+/* Projekt/ portfolio*/
+/* ---------------------------------------- */
+
+#projekt{
+  text-align:center;
+  margin:2%;
+}
+
+.projektsida{
+  display:flex;
+  flex-direction: row;
+  margin:5%;
+  width: auto;
+}
+.projektslides{
+  width:50%;
+  height:30%;
+}
+.projektInfo{
+  width:50%;
+  height:30%;
+  margin:2%;
+}
+
+/* Bildspel */
+/* ---------------------------------------- */
+
+.bildspel {
+  height:100%;
+  width: 100%;
+  border-radius: 10%;
+}
+.dots{
+  display:inline-block;
+  margin:0 1%;
+  position:absolute;
+  height: 2%;
+  width: 2%;
+  border-radius: 50%;
+  color:grey;
+}
+
+#startStop {
+  margin-left:10%;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4
   }
 
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4
+  }
+
+  to {
+    opacity: 1
+  }
 }

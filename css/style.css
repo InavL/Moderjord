@@ -918,14 +918,14 @@ background-color: white;
     width: 0%;
     background-color: #ffffff;
   }
+  
+
+  .personNamn {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .personInfoTR {
-    display: block;
-    width: 0%;
-    background-color: #ffffff;
-  }
 
   .underRubrik {
     font-size: 2em;

@@ -1,6 +1,5 @@
 var hej = new Boolean(true);
 var index=0;
-bildspel()
 
 function bildspel() {
   var i;
@@ -15,22 +14,23 @@ function bildspel() {
   }
   bilder[index - 1].style.display="block";
   if (hej == true) {
-    setTimeout(bildSpel, 4000);
+    setTimeout(bildspel, 1000);
   } else {
 
   }
 }
 
 $(document).ready(function () {
-  $("#stop").click(function () {
-    console.log("ready!");
-    hej = new Boolean(false);
-  });
-});
-$(document).ready(function () {
-  $("#start").click(function () {
+  $("#startStop").click(function () {
+    var knapp =  document.getElementsByClassName("startStop");
+    if(hej==false){
     console.log("ready!");
     hej = new Boolean(true);
-    bildSpel();
-  });
+    knapp.innerHTML ="Starta bildspel";
+    bildspel();
+  }
+  else{
+    hej = new Boolean(false);
+  }
+});
 });

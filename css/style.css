@@ -1039,59 +1039,88 @@ section {
     margin-right: 5%;
   }
 
-.barTitle {
+  .barTitle {
     box-sizing: border-box;
     font-size: 12;
     margin-top: 5%;
     margin-bottom: 5%;
     margin-left: 2%;
+  }
 }
 
-}
 /* Projekt/ portfolio*/
 /* ---------------------------------------- */
 
-#projekt{
-  text-align:center;
-  margin:2%;
+#projektwspace {
+  padding: 1%;
 }
 
-.projektsida{
-  display:flex;
+#projekt {
+  text-align: center;
+}
+
+#projektText {
+  justify-content: space-between;
+}
+
+.projektsida {
+  display: flex;
   flex-direction: row;
-  margin:5%;
+  margin: 5%;
   width: auto;
 }
-.projektslides{
-  width:50%;
-  height:30%;
+
+.projektslides {
+  width: 50%;
+  height: 30%;
 }
-.projektInfo{
-  width:50%;
-  height:30%;
-  margin:2%;
+
+.projektInfo {
+  width: 50%;
+  height: 30%;
+  margin: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+  .projektsida {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    width: auto;
+  }
+  .projektslides {
+    width: 100%;
+    height: 30%;
+  }
+  
+  .projektInfo {
+    width: 100%;
+    height: 30%;
+    margin: 2%;
+  }
 }
 
 /* Bildspel */
 /* ---------------------------------------- */
 
 .bildspel {
-  height:100%;
+  height: 100%;
   width: 100%;
   border-radius: 10%;
 }
-.dots{
-  display:inline-block;
-  margin:0 1%;
-  position:absolute;
+
+.dots {
+  display: inline-block;
+  margin: 0 1%;
+  position: absolute;
   height: 2%;
   width: 2%;
   border-radius: 50%;
-  color:grey;
+  color: grey;
 }
 
 #startStop {
-  margin-left:10%;
+  margin-left: 10%;
 }
 
 

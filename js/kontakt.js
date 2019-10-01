@@ -63,11 +63,11 @@ function checkFirstName() {
     if (pattern.test(fname) == true) {
         fNameBoolean = true;
 
-        document.getElementById("pCheckFname").innerHTML = "Correctly";
+        document.getElementById("pCheckFname").innerHTML = "Correct";
     } else {
         fNameBoolean = false;
 
-        document.getElementById("pCheckFname").innerHTML = "Type in right infromation";
+        document.getElementById("pCheckFname").innerHTML = "Type in correct infromation";
     }
 }
 
@@ -78,13 +78,13 @@ function checkLastName() {
     if (pattern.test(name) == true) {
 
         eNameBoolean = true;
-        document.getElementById("pCheckEname").innerHTML = "Correctly";
+        document.getElementById("pCheckEname").innerHTML = "Correct";
     } else {
 
         eNameBoolean = false;
 
 
-        document.getElementById("pCheckEname").innerHTML = "Type in right infromation";
+        document.getElementById("pCheckEname").innerHTML = "Type in correct infromation";
     }
 }
 
@@ -95,11 +95,11 @@ function checkEmail() {
     var pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (pattern.test(email) == true) {
         emailBoolean = true;
-        document.getElementById("pCheckEmail").innerHTML = "Correctly";
+        document.getElementById("pCheckEmail").innerHTML = "Correct";
     } else {
         emailBoolean = false;
         //this changes the grafical feedback to the user
-        document.getElementById("pCheckEmail").innerHTML = "Type in right infromation";
+        document.getElementById("pCheckEmail").innerHTML = "Type in correct infromation";
     }
 }
 
@@ -108,11 +108,11 @@ function checkPhoneNumber() {
     var pattern = /^\d{10}$/;
     if (pattern.test(number) == true) {
         numberBoolean = true;
-        document.getElementById("pCheckNumber").innerHTML = "Correctly";
+        document.getElementById("pCheckNumber").innerHTML = "Correct";
     } else {
         numberBoolean = false;
         check = true;
-        document.getElementById("pCheckNumber").innerHTML = "Type in right infromation";
+        document.getElementById("pCheckNumber").innerHTML = "Type in correct infromation";
     }
 }
 
@@ -123,16 +123,16 @@ function checkMessage() {
     if (pattern.test(message) == true) {
         messageBoolean = true;
 
-        document.getElementById("pCheckMessage").innerHTML = "Correctly";
+        document.getElementById("pCheckMessage").innerHTML = "Correct";
     } else {
         messageBoolean = false;
         check = true;
-        document.getElementById("pCheckMessage").innerHTML = "Type in right infromation";
+        document.getElementById("pCheckMessage").innerHTML = "Type in correct infromation";
     }
 }
 
 //On("keyup") kör funktionen när en nedtryckt tangent släpps
-//Funktionen gör att valdering kan ske undertiden användaren skriver
+//Funktionen gör att valdering kan ske under tiden användaren skriver
 //när funktionen körs aktiveras validerings funktionen.
 
 $(document).ready(function () {

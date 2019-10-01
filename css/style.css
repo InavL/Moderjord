@@ -1080,15 +1080,6 @@ section {
   width: 100%;
   border-radius: 10%;
 }
-.dots{
-  display:inline-block;
-  margin:0 1%;
-  position:absolute;
-  height: 2%;
-  width: 2%;
-  border-radius: 50%;
-  color:grey;
-}
 
 #startStop {
   margin-left:10%;

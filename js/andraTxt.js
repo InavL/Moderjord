@@ -1,3 +1,4 @@
+//ändrar värdet på knappen start/ stop
 function andraTxt() {
   var knapp = document.getElementById("startStop");
   if (knapp.value == "Stoppa bildspel") {

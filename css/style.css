@@ -288,6 +288,7 @@ h2 {
   font-weight: 100;
   line-height: 2;
   color: #2c3e50;
+  text-align: center;
 }
 
 h3 {
@@ -297,6 +298,8 @@ h3 {
   font-variant: normal;
   font-weight: 700;
   line-height: 18.7px;
+  color: #2c3e50;
+  margin-left: 1%;
 }
 
 p {
@@ -307,7 +310,7 @@ p {
   font-weight: 400;
   line-height: 20px;
   margin-bottom: 2rem;
-  color: #7f8c8d;
+  color: #000000;
   padding: 1%;
 }
 
@@ -1077,7 +1080,7 @@ section {
 
 .projektInfo {
   width: 50%;
-  height: 30%;
+  height: 50%;
   margin: 2%;
 }
 
@@ -1088,6 +1091,7 @@ section {
     margin: 5%;
     width: auto;
   }
+
   .projektslides {
     width: 100%;
     height: 30%;
@@ -1097,6 +1101,11 @@ section {
     width: 100%;
     height: 30%;
     margin: 2%;
+  }
+
+  #projektText {
+    justify-content: space-between;
+    text-align: center;
   }
 }
 
@@ -1148,5 +1157,131 @@ section {
 
   to {
     opacity: 1
+  }
+}
+
+/* Kontakt */
+/* ---------------------------------------- */
+
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 25% 2% 25%;
+  width: auto;
+}
+
+#pCheckFname {
+margin-bottom: 0;
+}
+
+#pCheckEname {
+  margin-bottom: 0;
+}
+
+#pCheckEmail {
+  margin-bottom: 0;
+}
+
+#pCheckNumber {
+  margin-bottom: 0;
+}
+
+#pCheckMessage {
+  margin-bottom: 0;
+}
+
+
+#googleMap {
+  width: 100%;
+  height: 19em;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Style inputs,
+select elements and textareas */ 
+input[type=text],
+input[type=email],
+input[type=number],
+#meddelande {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+#btnvalidate {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+#meddelande {
+  height: 200px;
+}
+
+/* Style the container */
+.contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+/* Floating column for labels: 25% width */
+.designLable {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.designInput {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.designLI:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  .designLable,
+  .designInput,
+  #btnvalidate {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .kontakt {
+    margin: 2% 2% 2% 2%;
+    width: auto;
   }
 }

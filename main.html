@@ -12,6 +12,8 @@
     <script src="js/hamburger.js"></script>
     <script src="js/bildspel.js"></script>
     <script src="js/andraTxt.js"></script>
+    <script src="js/kontakt.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -89,52 +91,93 @@
         <div class="projektslides">
             <img class="bildspel fade" src="images/projekt.jpg" alt="">
             <img class="bildspel fade" src="images/projekt2.jpg" alt="">
-            <input onclick="andraTxt()" type="button" value="Stoppa bildspel" id="startStop"></input>
+            <input onclick="andraTxt()" type="button" value="Stoppa bildspel" id="startStop">
             <div class="dots"></div>
         </div>
         <div class="projektInfo">
-            <h3 class="projektText">Syftet med projektet</h3>
+            <h3 id="projektText">Syftet med projektet</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                 aliquip ex ea commodo consequat.
-                </br>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                 aliquip ex ea commodo consequat.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                 aliquip ex ea commodo consequat.
-                </br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                 aliquip ex ea commodo consequat.</p>
         </div>
     </div>
 
-    <h3>Tillvägagång</h3>
+    <div class="kontakt" id="kontakt">
+        <h2>Kontakta oss!</h2>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo
-        consequat.
-        </br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo
-        consequat.</p>
-    <h3>Projektets tidsplan</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo
-        consequat. </br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo
-        consequat.</p>
+        <div id="googleMap">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2126.301566240002!2d15.245112578900159!3d59.25470605689141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c145b3794236f%3A0x17883dd4b41e4305!2sSesam%20Business%20Lounge!5e0!3m2!1ssv!2sse!4v1569240689027!5m2!1ssv!2sse"></iframe>
+        </div>
+
+        <div class="kontaktForm">
+            <form id="theForm" name="form" method="post">
+                <div class="designLI">
+                    <div class="designLable">
+                        <label>Förnamn:</label> <br />
+                    </div>
+                    <div class="designInput">
+                        <input type="text" name="fname" id="fname" /> <br />
+                        <p id="pCheckFname">...</p>
+                    </div>
+                </div>
+                <div class="designLI">
+                    <div class="designLable">
+                        <label>Efternamn:</label> <br />
+                    </div>
+                    <div class="designInput">
+                        <input type="text" name="ename" id="ename" /> <br />
+                        <p id="pCheckEname">...</p>
+                    </div>
+                </div>
+                <div class="designLI">
+                    <div class="designLable">
+                        <label>E-postadress:</label> <br />
+                    </div>
+                    <div class="designInput">
+                        <input type="email" name="email" id="email" /> <br />
+                        <p id="pCheckEmail">...</p>
+                    </div>
+                </div>
+                <div class="designLI">
+                    <div class="designLable">
+                        <label>Telefonnummer</label> <br />
+                    </div>
+                    <div class="designInput">
+                        <input type="text" name="mobile" id="mobile" /> <br />
+                        <p id="pCheckNumber">...</p>
+                    </div>
+                </div>
+                <div class="designLI">
+                    <div class="designLable">
+                        <label>Meddelande:</label> <br />
+                    </div>
+                    <div class="designInput"></div>
+                    <input type="text" name="message" id="message" placeholder="Message..." /> <br />
+                    <p id="pCheckMessage">...</p>
+                </div>
+            </form>
+            <div class="designLI">
+                <button id="btSaveForm" type="button">Skicka Meddelande</button>
+            </div>
+        </div>
+
+    </div>
 
     <div class="footer">
         <div class="footer-wrapper">

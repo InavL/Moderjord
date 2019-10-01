@@ -225,51 +225,6 @@ body.sticky-header .header h2 {
   transform: scale(0, 0);
 }
 
-/* Header without picture */
-/* ---------------------------------------- */
-
-.headerNoPic {
-  width: 100%;
-  height: 60px;
-  background-color: rgba(13, 105, 145, 1);
-  text-align: center;
-  position: relative;
-  top: 0;
-  overflow: hidden;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: 1;
-}
-
-.headerNoPic .navb {
-  position: absolute;
-  bottom: 0;
-  height: 60px;
-  line-height: 60px;
-  width: 100%;
-  background-color: #0b4f6c;
-}
-
-.headerNoPic .navb a {
-  color: #fff;
-  display: inline-block;
-  padding: 0.5% 1%;
-  line-height: 1;
-  font-size: 24px;
-  text-decoration: none;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-}
-
-.headerNoPic .navb a:hover {
-  -moz-box-shadow: 0 0 0 1px #fff;
-  -webkit-box-shadow: 0 0 0 1px #fff;
-  box-shadow: 0 0 0 1px #fff;
-}
-
 /* Text */
 /* ---------------------------------------- */
 
@@ -314,24 +269,6 @@ p {
   padding: 1%;
 }
 
-blockquote {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 17px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 24.2833px;
-}
-
-pre {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 11px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 15.7167px;
-}
-
 /* Misc */
 /* ---------------------------------------- */
 
@@ -348,18 +285,6 @@ pre {
 .wrapper {
   width: 800px;
   margin: 0 auto;
-}
-
-section {
-  padding: 20px;
-  margin-bottom: 40px;
-  background-color: #fff;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
@@ -481,146 +406,12 @@ section {
   }
 }
 
-/* Profilsida */
+/* Läs mer om Oss */
 /* ---------------------------------------- */
-
-
-#pTxt {
-  margin-left: 30%;
-  margin-right: 30%;
-}
-
-.pImg2 {
-  border-radius: 50%;
-  margin-top: 25%;
-  margin-right: 10%;
-}
-
-.imgDiv {
-  margin: 4%;
-}
-
-.txt1 {
-  margin: 4%
-}
-
-.img1 {
-  border-radius: 50%;
-}
 
 .img1:hover {
   opacity: 0.5;
 }
-
-.profilHead {
-  text-align: center;
-}
-
-.divPersonInfo {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin-top: 10%;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-bottom: 10%;
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.774);
-}
-
-.personTop {
-  position: initial;
-  height: 70%;
-  width: 100%;
-}
-
-.topL {
-  margin-left: 2%;
-  float: left;
-  width: 45%;
-}
-
-.topR {
-
-  float: right;
-  width: 45%;
-}
-
-.personBottom {
-  display: flex;
-  flex-direction: row;
-  height: 30%;
-  width: 100%;
-}
-
-.java-info {
-  border: solid;
-  position: absolute;
-  visibility: hidden;
-  margin-left: 40%;
-  width: 20%;
-  background-color: white;
-}
-
-.sql-info {
-  position: absolute;
-  visibility: hidden;
-  width: 10%;
-  background-color: white;
-}
-
-.divBottomL {
-  width: 50%;
-  padding-bottom: 3%;
-}
-
-.divBottomR {
-  width: 50%;
-  padding-bottom: 3%;
-}
-
-.barProgress {
-  box-sizing: border-box;
-  margin-left: 2%;
-  width: 80%;
-  height: 12%;
-  border: solid;
-  border-width: 2px;
-  border-radius: 15px;
-  background-color: white;
-}
-
-.barTxt {
-  box-sizing: border-box;
-  font-size: 12;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 2%;
-}
-
-#centerTxt {
-  text-align: center;
-  position: relative;
-  font-size: 16px;
-}
-
-.navProfil {
-  position: absolute;
-  height: 60px;
-  line-height: 60px;
-  width: 100%;
-  background-color: #0b4f6c;
-}
-
-.navProfil a:hover {
-  -moz-box-shadow: 0 0 0 1px #fff;
-  -webkit-box-shadow: 0 0 0 1px #fff;
-  box-shadow: 0 0 0 1px #fff;
-}
-
-/* Läs mer om Oss */
-/* ---------------------------------------- */
 
 .profilDiv {
   padding: 1%;
@@ -684,12 +475,6 @@ section {
 
 /* Information om oss */
 /* ---------------------------------------- */
-
-.underRubrik {
-  text-align: center;
-  line-height: 0;
-  padding-top: 3%;
-}
 
 .personNamn {
   margin-left: 1%;
@@ -809,6 +594,57 @@ section {
   width: 50%;
   padding-bottom: 3%;
 }
+
+@media only screen and (max-width: 850px) {
+  .personInfoTR {
+    display: block;
+    width: 0%;
+    background-color: #ffffff;
+  }
+
+  .personNamn {
+    display: none;
+  }
+
+  .personInfoTRMob {
+    display: flex;
+    width: 100%;
+    height: 30em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .underRubrik {
+    font-size: 2em;
+    text-align: center;
+    line-height: 0;
+    padding-top: 3%;
+  }
+
+  .personNamn {
+    line-height: 1.3;
+    font-size: 2em;
+    margin-left: 1%;
+  }
+
+  .personInfo {
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .barTitle {
+    box-sizing: border-box;
+    font-size: 12;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+  }
+}
+
+/* Progressbar värden  */
+/* ---------------------------------------- */
 
 .barTitle {
   box-sizing: border-box;
@@ -1003,55 +839,7 @@ section {
   color: white;
 }
 
-@media only screen and (max-width: 850px) {
-  .personInfoTR {
-    display: block;
-    width: 0%;
-    background-color: #ffffff;
-  }
-
-  .personNamn {
-    display: none;
-  }
-
-  .personInfoTRMob {
-    display: flex;
-    width: 100%;
-    height: 30em;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-
-  .underRubrik {
-    font-size: 2em;
-    text-align: center;
-    line-height: 0;
-    padding-top: 3%;
-  }
-
-  .personNamn {
-    line-height: 1.3;
-    font-size: 2em;
-    margin-left: 1%;
-  }
-
-  .personInfo {
-    margin-top: 1%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .barTitle {
-    box-sizing: border-box;
-    font-size: 12;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 2%;
-  }
-}
-
-/* Projekt/ portfolio*/
+/* Projekt/portfolio*/
 /* ---------------------------------------- */
 
 #projektwspace {
@@ -1083,6 +871,7 @@ section {
   width: 50%;
   height: 50%;
   margin: 2%;
+  z-index: -1;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1097,7 +886,7 @@ section {
     width: 100%;
     height: 30%;
   }
-  
+
   .projektInfo {
     width: 100%;
     height: 30%;
@@ -1125,6 +914,7 @@ section {
   font-size: 16px;
   cursor: pointer;
   text-align: center;
+  z-index: 1;
 }
 
 .bildspel {
@@ -1181,7 +971,7 @@ section {
 }
 
 #pCheckFname {
-margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 #pCheckEname {
@@ -1212,7 +1002,7 @@ iframe {
 }
 
 /* Style inputs,
-select elements and textareas */ 
+select elements and textareas */
 input[type=text],
 input[type=email],
 input[type=number],
@@ -1283,6 +1073,7 @@ label {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 768px) {
+
   .designLable,
   .designInput,
   #btnvalidate {

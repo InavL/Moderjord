@@ -27,7 +27,7 @@ $(document).ready(function () {
             console.log(values);
 
             //The data is stored in a JSON and then set to the localstorage of the
-            // used webbpage (cookis).
+            //of the used webbpage (cookis)
             var theNewJSON = JSON.stringify(values);
             localStorage.setItem("theJSON", theNewJSON);
         }
